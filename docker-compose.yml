@@ -1,0 +1,9 @@
+services:
+  # Serviço da Aplicação Go
+  app:
+    build: .
+    container_name: api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
